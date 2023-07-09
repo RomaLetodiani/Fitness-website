@@ -1,0 +1,56 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+main>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+main>h1 {
+    font-size: clamp(30px,3vw,45px);
+}
+
+main>div>div {
+    display: flex;
+    gap: 5vw;
+}
+
+main>div>div>div>img {
+    width: 100%;
+    min-width: 180px;
+    margin-bottom: 2vw;
+    border-radius: 10vw 0;
+}
+
+main>div>div>div>h3 {
+    font-size: clamp(16px,5vw,25px);
+}
+
+main>div>div>div>p {
+    font-size: clamp(10px,3vw,16px);
+    max-width: 80%;
+}
+
+@media (max-width:768px){
+    main>div>div{
+        flex-direction: column;
+    }
+}
+@media (max-width:480px){
+    main>div {
+        gap: 10vw;
+    }
+    main>div>div{
+        gap: 10vw;
+    }
+}
